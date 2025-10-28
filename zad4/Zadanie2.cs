@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LookAround : MonoBehaviour
+public class Zadanie2 : MonoBehaviour
 {
     // ruch wokół osi Y będzie wykonywany na obiekcie gracza, więc
     // potrzebna nam referencja do niego (konkretnie jego komponentu Transform)
@@ -50,4 +50,5 @@ public class LookAround : MonoBehaviour
             transform.Rotate(new Vector3(-mouseYMove, 0f, 0f), Space.Self);
         }
     }
+
 }
