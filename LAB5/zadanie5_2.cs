@@ -16,7 +16,7 @@ public class zadanie5_2 : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);;
+            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
         }
     }
     private void OnTriggerExit(Collider other)
@@ -46,3 +46,4 @@ public class zadanie5_2 : MonoBehaviour
         
     }
 }
+
