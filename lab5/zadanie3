@@ -1,0 +1,20 @@
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class Zadanie3 : MonoBehaviour
+{
+
+    private GameObject player;
+    void Start()
+    {
+        player= GameObject.FindGameObjectWithTag("Player");
+        
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player") )
+        {
+            player.GetComponent<zadanie2>().playerVelocity.y = Mathf.Sqrt(player.GetComponent<zadanie2>().jumpHeight*3 * -2.0f * -9.81f);
+        }
+    }
+}
