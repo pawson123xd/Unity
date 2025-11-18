@@ -1,0 +1,16 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+public class zadanie5 : MonoBehaviour
+{
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+         Debug.Log("Player zderzył się z objekt.");
+    }
+}
