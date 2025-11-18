@@ -11,6 +11,9 @@ public class zadanie5 : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-         Debug.Log("Player zderzył się z objekt.");
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Player zderzył się z objekt.");
+        }
     }
 }
